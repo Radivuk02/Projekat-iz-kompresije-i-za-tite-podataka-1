@@ -14,11 +14,16 @@ double calculate(const string& filename)
         freq[byte]++;
         ukupno++;
     }
-
+    
+    if(ukupno==0)
+    {
+    	return 0.0;
+    }
+    
     double entropy=0.0;
     for(int i=0;i<256;i++){
         if(freq[i]>0){
-            double p=static_cast<double>(freq[i]/ukupno);
+            double p=static_cast<double>(freq[i])/ukupno;
             entropy=entropy-(p*log2(p));
         }
     }
