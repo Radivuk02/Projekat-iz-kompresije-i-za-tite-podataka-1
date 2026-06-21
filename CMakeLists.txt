@@ -9,3 +9,8 @@ add_executable(entropy_test
 	entropy_test.cpp
 	cpp/entropy.cpp
 )
+
+add_executable(huffman_test
+	huffman_test.cpp
+	cpp/huffman.cpp
+)

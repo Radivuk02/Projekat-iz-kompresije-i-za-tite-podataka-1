@@ -129,6 +129,19 @@ entropy_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/build
 .PHONY : entropy_test/fast
 
+#=============================================================================
+# Target rules for targets named huffman_test
+
+# Build rule for target.
+huffman_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 huffman_test
+.PHONY : huffman_test
+
+# fast build rule for target.
+huffman_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/build
+.PHONY : huffman_test/fast
+
 cpp/entropy.o: cpp/entropy.cpp.o
 .PHONY : cpp/entropy.o
 
@@ -152,6 +165,30 @@ cpp/entropy.s: cpp/entropy.cpp.s
 cpp/entropy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/cpp/entropy.cpp.s
 .PHONY : cpp/entropy.cpp.s
+
+cpp/huffman.o: cpp/huffman.cpp.o
+.PHONY : cpp/huffman.o
+
+# target to build an object file
+cpp/huffman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.o
+.PHONY : cpp/huffman.cpp.o
+
+cpp/huffman.i: cpp/huffman.cpp.i
+.PHONY : cpp/huffman.i
+
+# target to preprocess a source file
+cpp/huffman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.i
+.PHONY : cpp/huffman.cpp.i
+
+cpp/huffman.s: cpp/huffman.cpp.s
+.PHONY : cpp/huffman.s
+
+# target to generate assembly for a file
+cpp/huffman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.s
+.PHONY : cpp/huffman.cpp.s
 
 entropy_test.o: entropy_test.cpp.o
 .PHONY : entropy_test.o
@@ -177,6 +214,30 @@ entropy_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/entropy_test.cpp.s
 .PHONY : entropy_test.cpp.s
 
+huffman_test.o: huffman_test.cpp.o
+.PHONY : huffman_test.o
+
+# target to build an object file
+huffman_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/huffman_test.cpp.o
+.PHONY : huffman_test.cpp.o
+
+huffman_test.i: huffman_test.cpp.i
+.PHONY : huffman_test.i
+
+# target to preprocess a source file
+huffman_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/huffman_test.cpp.i
+.PHONY : huffman_test.cpp.i
+
+huffman_test.s: huffman_test.cpp.s
+.PHONY : huffman_test.s
+
+# target to generate assembly for a file
+huffman_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/huffman_test.cpp.s
+.PHONY : huffman_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +247,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... entropy_test"
+	@echo "... huffman_test"
 	@echo "... cpp/entropy.o"
 	@echo "... cpp/entropy.i"
 	@echo "... cpp/entropy.s"
+	@echo "... cpp/huffman.o"
+	@echo "... cpp/huffman.i"
+	@echo "... cpp/huffman.s"
 	@echo "... entropy_test.o"
 	@echo "... entropy_test.i"
 	@echo "... entropy_test.s"
+	@echo "... huffman_test.o"
+	@echo "... huffman_test.i"
+	@echo "... huffman_test.s"
 .PHONY : help
 
 
