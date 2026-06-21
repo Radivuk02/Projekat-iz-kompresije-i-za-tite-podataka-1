@@ -142,6 +142,19 @@ huffman_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/build
 .PHONY : huffman_test/fast
 
+#=============================================================================
+# Target rules for targets named sf_test
+
+# Build rule for target.
+sf_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sf_test
+.PHONY : sf_test
+
+# fast build rule for target.
+sf_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/build
+.PHONY : sf_test/fast
+
 cpp/entropy.o: cpp/entropy.cpp.o
 .PHONY : cpp/entropy.o
 
@@ -189,6 +202,30 @@ cpp/huffman.s: cpp/huffman.cpp.s
 cpp/huffman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.s
 .PHONY : cpp/huffman.cpp.s
+
+cpp/sha_fanno.o: cpp/sha_fanno.cpp.o
+.PHONY : cpp/sha_fanno.o
+
+# target to build an object file
+cpp/sha_fanno.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.o
+.PHONY : cpp/sha_fanno.cpp.o
+
+cpp/sha_fanno.i: cpp/sha_fanno.cpp.i
+.PHONY : cpp/sha_fanno.i
+
+# target to preprocess a source file
+cpp/sha_fanno.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.i
+.PHONY : cpp/sha_fanno.cpp.i
+
+cpp/sha_fanno.s: cpp/sha_fanno.cpp.s
+.PHONY : cpp/sha_fanno.s
+
+# target to generate assembly for a file
+cpp/sha_fanno.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.s
+.PHONY : cpp/sha_fanno.cpp.s
 
 entropy_test.o: entropy_test.cpp.o
 .PHONY : entropy_test.o
@@ -238,6 +275,30 @@ huffman_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/huffman_test.cpp.s
 .PHONY : huffman_test.cpp.s
 
+sf_test.o: sf_test.cpp.o
+.PHONY : sf_test.o
+
+# target to build an object file
+sf_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/sf_test.cpp.o
+.PHONY : sf_test.cpp.o
+
+sf_test.i: sf_test.cpp.i
+.PHONY : sf_test.i
+
+# target to preprocess a source file
+sf_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/sf_test.cpp.i
+.PHONY : sf_test.cpp.i
+
+sf_test.s: sf_test.cpp.s
+.PHONY : sf_test.s
+
+# target to generate assembly for a file
+sf_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/sf_test.cpp.s
+.PHONY : sf_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -248,18 +309,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... entropy_test"
 	@echo "... huffman_test"
+	@echo "... sf_test"
 	@echo "... cpp/entropy.o"
 	@echo "... cpp/entropy.i"
 	@echo "... cpp/entropy.s"
 	@echo "... cpp/huffman.o"
 	@echo "... cpp/huffman.i"
 	@echo "... cpp/huffman.s"
+	@echo "... cpp/sha_fanno.o"
+	@echo "... cpp/sha_fanno.i"
+	@echo "... cpp/sha_fanno.s"
 	@echo "... entropy_test.o"
 	@echo "... entropy_test.i"
 	@echo "... entropy_test.s"
 	@echo "... huffman_test.o"
 	@echo "... huffman_test.i"
 	@echo "... huffman_test.s"
+	@echo "... sf_test.o"
+	@echo "... sf_test.i"
+	@echo "... sf_test.s"
 .PHONY : help
 
 

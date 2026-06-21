@@ -10,9 +10,12 @@ using namespace std;
 struct Simbol{
     unsigned char ch;
     double prob;
+    bool operator<(const Simbol& other) const {
+        return prob > other.prob;
+    }
 };
 
-void shannonFano(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,string>&codes,string prefix);
+void shaFanno(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,string>&codes,string prefix);
 
 #endif
 

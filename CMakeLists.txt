@@ -14,3 +14,8 @@ add_executable(huffman_test
 	huffman_test.cpp
 	cpp/huffman.cpp
 )
+
+add_executable(sf_test
+	sf_test.cpp
+	cpp/sha_fanno.cpp
+)

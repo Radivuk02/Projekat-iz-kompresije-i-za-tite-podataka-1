@@ -56,4 +56,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/entropy_test.dir/DependInfo.cmake"
   "CMakeFiles/huffman_test.dir/DependInfo.cmake"
+  "CMakeFiles/sf_test.dir/DependInfo.cmake"
   )

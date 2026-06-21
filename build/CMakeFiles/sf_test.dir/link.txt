@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sf_test.dir/sf_test.cpp.o CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.o -o sf_test
