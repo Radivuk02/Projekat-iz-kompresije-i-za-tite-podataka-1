@@ -15,4 +15,5 @@ struct Token{
 
 vector<Token> lzComp(const string& input, int windowSize);
 
+string lzDecomp(const vector<Token>&tokeni);
 #endif

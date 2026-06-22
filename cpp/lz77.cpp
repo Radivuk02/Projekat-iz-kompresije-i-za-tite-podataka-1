@@ -22,3 +22,22 @@ vector <Token> lzComp(const string& input, int windowSize){
     }
     return tokeni;
 }
+
+string lzDecomp(vector<Token>&tokeni){
+    string izlaz;
+    for(auto &t:tokeni){
+        if(t.offset==0 && t.len==0){
+            izlaz.push_back(t.next);
+        }
+        else{
+            int start=(int)izlaz.size()-t.offset;
+            for(int i=0;i<t.len;i++){
+                izlaz.push_back(izlaz[start+i]);
+            }
+            if(t.next!='\0'){
+                izlaz.push_back(t.next);
+            }
+        }
+    }
+    return izlaz;
+}
