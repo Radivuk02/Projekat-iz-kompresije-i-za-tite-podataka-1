@@ -155,6 +155,19 @@ sf_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/build
 .PHONY : sf_test/fast
 
+#=============================================================================
+# Target rules for targets named lz77_test
+
+# Build rule for target.
+lz77_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lz77_test
+.PHONY : lz77_test
+
+# fast build rule for target.
+lz77_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/build
+.PHONY : lz77_test/fast
+
 cpp/entropy.o: cpp/entropy.cpp.o
 .PHONY : cpp/entropy.o
 
@@ -202,6 +215,30 @@ cpp/huffman.s: cpp/huffman.cpp.s
 cpp/huffman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.s
 .PHONY : cpp/huffman.cpp.s
+
+cpp/lz77.o: cpp/lz77.cpp.o
+.PHONY : cpp/lz77.o
+
+# target to build an object file
+cpp/lz77.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.o
+.PHONY : cpp/lz77.cpp.o
+
+cpp/lz77.i: cpp/lz77.cpp.i
+.PHONY : cpp/lz77.i
+
+# target to preprocess a source file
+cpp/lz77.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.i
+.PHONY : cpp/lz77.cpp.i
+
+cpp/lz77.s: cpp/lz77.cpp.s
+.PHONY : cpp/lz77.s
+
+# target to generate assembly for a file
+cpp/lz77.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.s
+.PHONY : cpp/lz77.cpp.s
 
 cpp/sha_fanno.o: cpp/sha_fanno.cpp.o
 .PHONY : cpp/sha_fanno.o
@@ -275,6 +312,30 @@ huffman_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/huffman_test.cpp.s
 .PHONY : huffman_test.cpp.s
 
+lz77_test.o: lz77_test.cpp.o
+.PHONY : lz77_test.o
+
+# target to build an object file
+lz77_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/lz77_test.cpp.o
+.PHONY : lz77_test.cpp.o
+
+lz77_test.i: lz77_test.cpp.i
+.PHONY : lz77_test.i
+
+# target to preprocess a source file
+lz77_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/lz77_test.cpp.i
+.PHONY : lz77_test.cpp.i
+
+lz77_test.s: lz77_test.cpp.s
+.PHONY : lz77_test.s
+
+# target to generate assembly for a file
+lz77_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/lz77_test.cpp.s
+.PHONY : lz77_test.cpp.s
+
 sf_test.o: sf_test.cpp.o
 .PHONY : sf_test.o
 
@@ -309,6 +370,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... entropy_test"
 	@echo "... huffman_test"
+	@echo "... lz77_test"
 	@echo "... sf_test"
 	@echo "... cpp/entropy.o"
 	@echo "... cpp/entropy.i"
@@ -316,6 +378,9 @@ help:
 	@echo "... cpp/huffman.o"
 	@echo "... cpp/huffman.i"
 	@echo "... cpp/huffman.s"
+	@echo "... cpp/lz77.o"
+	@echo "... cpp/lz77.i"
+	@echo "... cpp/lz77.s"
 	@echo "... cpp/sha_fanno.o"
 	@echo "... cpp/sha_fanno.i"
 	@echo "... cpp/sha_fanno.s"
@@ -325,6 +390,9 @@ help:
 	@echo "... huffman_test.o"
 	@echo "... huffman_test.i"
 	@echo "... huffman_test.s"
+	@echo "... lz77_test.o"
+	@echo "... lz77_test.i"
+	@echo "... lz77_test.s"
 	@echo "... sf_test.o"
 	@echo "... sf_test.i"
 	@echo "... sf_test.s"

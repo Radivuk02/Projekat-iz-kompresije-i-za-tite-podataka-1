@@ -11,6 +11,7 @@ vector <Token> lzComp(const string& input, int windowSize){
         for(int j= max(0,i-windowSize);j<i;j++){
             int len=0;
             while(i+len<input.size() && input[j+len]==input[i+len])
+            len++;
             if(len>bestlen){
                 bestlen=len;
                 bestOff=i-j;
@@ -23,7 +24,7 @@ vector <Token> lzComp(const string& input, int windowSize){
     return tokeni;
 }
 
-string lzDecomp(vector<Token>&tokeni){
+string lzDecomp(const vector<Token>&tokeni){
     string izlaz;
     for(auto &t:tokeni){
         if(t.offset==0 && t.len==0){

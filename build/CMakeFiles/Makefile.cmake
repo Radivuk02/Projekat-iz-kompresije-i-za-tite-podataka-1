@@ -57,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/entropy_test.dir/DependInfo.cmake"
   "CMakeFiles/huffman_test.dir/DependInfo.cmake"
   "CMakeFiles/sf_test.dir/DependInfo.cmake"
+  "CMakeFiles/lz77_test.dir/DependInfo.cmake"
   )

@@ -19,3 +19,7 @@ add_executable(sf_test
 	sf_test.cpp
 	cpp/sha_fanno.cpp
 )
+
+add_executable(lz77_test
+	lz77_test.cpp
+	cpp/lz77.cpp)
