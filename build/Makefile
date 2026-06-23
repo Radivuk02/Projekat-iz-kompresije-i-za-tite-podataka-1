@@ -168,6 +168,19 @@ lz77_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/build
 .PHONY : lz77_test/fast
 
+#=============================================================================
+# Target rules for targets named lzw_test
+
+# Build rule for target.
+lzw_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lzw_test
+.PHONY : lzw_test
+
+# fast build rule for target.
+lzw_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/build
+.PHONY : lzw_test/fast
+
 cpp/entropy.o: cpp/entropy.cpp.o
 .PHONY : cpp/entropy.o
 
@@ -239,6 +252,30 @@ cpp/lz77.s: cpp/lz77.cpp.s
 cpp/lz77.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.s
 .PHONY : cpp/lz77.cpp.s
+
+cpp/lzw.o: cpp/lzw.cpp.o
+.PHONY : cpp/lzw.o
+
+# target to build an object file
+cpp/lzw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.o
+.PHONY : cpp/lzw.cpp.o
+
+cpp/lzw.i: cpp/lzw.cpp.i
+.PHONY : cpp/lzw.i
+
+# target to preprocess a source file
+cpp/lzw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.i
+.PHONY : cpp/lzw.cpp.i
+
+cpp/lzw.s: cpp/lzw.cpp.s
+.PHONY : cpp/lzw.s
+
+# target to generate assembly for a file
+cpp/lzw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.s
+.PHONY : cpp/lzw.cpp.s
 
 cpp/sha_fanno.o: cpp/sha_fanno.cpp.o
 .PHONY : cpp/sha_fanno.o
@@ -336,6 +373,30 @@ lz77_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/lz77_test.cpp.s
 .PHONY : lz77_test.cpp.s
 
+lzw_test.o: lzw_test.cpp.o
+.PHONY : lzw_test.o
+
+# target to build an object file
+lzw_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/lzw_test.cpp.o
+.PHONY : lzw_test.cpp.o
+
+lzw_test.i: lzw_test.cpp.i
+.PHONY : lzw_test.i
+
+# target to preprocess a source file
+lzw_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/lzw_test.cpp.i
+.PHONY : lzw_test.cpp.i
+
+lzw_test.s: lzw_test.cpp.s
+.PHONY : lzw_test.s
+
+# target to generate assembly for a file
+lzw_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/lzw_test.cpp.s
+.PHONY : lzw_test.cpp.s
+
 sf_test.o: sf_test.cpp.o
 .PHONY : sf_test.o
 
@@ -371,6 +432,7 @@ help:
 	@echo "... entropy_test"
 	@echo "... huffman_test"
 	@echo "... lz77_test"
+	@echo "... lzw_test"
 	@echo "... sf_test"
 	@echo "... cpp/entropy.o"
 	@echo "... cpp/entropy.i"
@@ -381,6 +443,9 @@ help:
 	@echo "... cpp/lz77.o"
 	@echo "... cpp/lz77.i"
 	@echo "... cpp/lz77.s"
+	@echo "... cpp/lzw.o"
+	@echo "... cpp/lzw.i"
+	@echo "... cpp/lzw.s"
 	@echo "... cpp/sha_fanno.o"
 	@echo "... cpp/sha_fanno.i"
 	@echo "... cpp/sha_fanno.s"
@@ -393,6 +458,9 @@ help:
 	@echo "... lz77_test.o"
 	@echo "... lz77_test.i"
 	@echo "... lz77_test.s"
+	@echo "... lzw_test.o"
+	@echo "... lzw_test.i"
+	@echo "... lzw_test.s"
 	@echo "... sf_test.o"
 	@echo "... sf_test.i"
 	@echo "... sf_test.s"

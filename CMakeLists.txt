@@ -23,3 +23,7 @@ add_executable(sf_test
 add_executable(lz77_test
 	lz77_test.cpp
 	cpp/lz77.cpp)
+	
+add_executable(lzw_test
+	lzw_test.cpp
+	cpp/lzw.cpp)
