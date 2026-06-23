@@ -4,8 +4,11 @@
 #include<vector>
 #include<string>
 #include<unordered_map>
+#include<iostream>
+
 using namespace std;
 
-vector<int> lzwCompress(const string& ulaz);
+vector<int> lzwComp(const string& ulaz);
 
+string lzwDecomp(const vector<int>&compr);
 #endif
