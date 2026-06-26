@@ -1,0 +1,25 @@
+#include "../headers/file_manager.h"
+
+vector<unsigned char> FileManager::readFile(const string& filename)
+{
+    ifstream file(filename,ios::binary);
+    return vector<unsigned char>((istreambuf_iterator<char>(file)),(istreambuf_iterator<char>()));
+}
+
+
+void FileManager::writeBin(const string& filename,const vector<unsigned char>&data){
+    ofstream file(filename,ios::binary);
+    file.write(reinterpret_cast<const char*>(data.data()),data.size());
+}
+
+void FileManager::writeText(const string& filename,const string& data){
+    ofstream file(filename);
+    file<<data;
+}
+
+void FileManager::writeCodes(const string& filename,const vector<pair<unsigned char,string>>&codes){
+    ofstream file(filename);
+    for(auto c:codes){
+        file<<(int)c.first<<" : "<<c.second<< "\n";
+    }
+}
