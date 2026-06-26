@@ -23,3 +23,9 @@ void FileManager::writeCodes(const string& filename,const vector<pair<unsigned c
         file<<(int)c.first<<" : "<<c.second<< "\n";
     }
 }
+
+bool FileManager::compareFiles(const string& file1,const string& file2){
+    auto f1=readFile(file1);
+    auto f2=readFile(file2);
+    return f1==f2;
+}
