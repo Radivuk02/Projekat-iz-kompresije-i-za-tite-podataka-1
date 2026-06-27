@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lz77.cpp" "CMakeFiles/main.dir/cpp/lz77.cpp.o" "gcc" "CMakeFiles/main.dir/cpp/lz77.cpp.o.d"
   "/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lzw.cpp" "CMakeFiles/main.dir/cpp/lzw.cpp.o" "gcc" "CMakeFiles/main.dir/cpp/lzw.cpp.o.d"
   "/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sha_fanno.cpp" "CMakeFiles/main.dir/cpp/sha_fanno.cpp.o" "gcc" "CMakeFiles/main.dir/cpp/sha_fanno.cpp.o.d"
+  "/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sub_fun.cpp" "CMakeFiles/main.dir/cpp/sub_fun.cpp.o" "gcc" "CMakeFiles/main.dir/cpp/sub_fun.cpp.o.d"
   "/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 

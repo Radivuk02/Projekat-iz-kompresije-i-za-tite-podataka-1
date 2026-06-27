@@ -353,6 +353,30 @@ cpp/sha_fanno.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sha_fanno.cpp.s
 .PHONY : cpp/sha_fanno.cpp.s
 
+cpp/sub_fun.o: cpp/sub_fun.cpp.o
+.PHONY : cpp/sub_fun.o
+
+# target to build an object file
+cpp/sub_fun.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sub_fun.cpp.o
+.PHONY : cpp/sub_fun.cpp.o
+
+cpp/sub_fun.i: cpp/sub_fun.cpp.i
+.PHONY : cpp/sub_fun.i
+
+# target to preprocess a source file
+cpp/sub_fun.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sub_fun.cpp.i
+.PHONY : cpp/sub_fun.cpp.i
+
+cpp/sub_fun.s: cpp/sub_fun.cpp.s
+.PHONY : cpp/sub_fun.s
+
+# target to generate assembly for a file
+cpp/sub_fun.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sub_fun.cpp.s
+.PHONY : cpp/sub_fun.cpp.s
+
 entropy_test.o: entropy_test.cpp.o
 .PHONY : entropy_test.o
 
@@ -529,6 +553,9 @@ help:
 	@echo "... cpp/sha_fanno.o"
 	@echo "... cpp/sha_fanno.i"
 	@echo "... cpp/sha_fanno.s"
+	@echo "... cpp/sub_fun.o"
+	@echo "... cpp/sub_fun.i"
+	@echo "... cpp/sub_fun.s"
 	@echo "... entropy_test.o"
 	@echo "... entropy_test.i"
 	@echo "... entropy_test.s"

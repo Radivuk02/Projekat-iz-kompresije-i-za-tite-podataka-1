@@ -1,6 +1,8 @@
-CMakeFiles/main.dir/main.cpp.o: \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+CMakeFiles/main.dir/cpp/sub_fun.cpp.o: \
+ /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sub_fun.cpp \
+ /usr/include/stdc-predef.h \
+ /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/../headers/sub_fun.h \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -145,42 +147,12 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/file_manager.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/fstream \
- /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/entropy.h \
- /usr/include/c++/11/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
- /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/sha_fanno.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/../headers/sha_fanno.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/hashtable.h \
@@ -191,12 +163,4 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/huffman.h \
- /usr/include/c++/11/queue /usr/include/c++/11/deque \
- /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_heap.h /usr/include/c++/11/bits/stl_queue.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/lz77.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/lzw.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/sub_fun.h \
- /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/headers/sha_fanno.h
+ /usr/include/c++/11/bits/erase_if.h

@@ -5,19 +5,8 @@
 #include "headers/huffman.h"
 #include "headers/lz77.h"
 #include "headers/lzw.h"
+#include "headers/sub_fun.h"
 
-using namespace std;
-void sortSimboli(vector<Simbol>& simboli) {
-    for (size_t i = 0; i < simboli.size(); i++) {
-        for (size_t j = i + 1; j < simboli.size(); j++) {
-            if (simboli[j].prob > simboli[i].prob) {
-                Simbol tmp = simboli[i];
-                simboli[i] = simboli[j];
-                simboli[j] = tmp;
-            }
-        }
-    }
-}
 int main(){
     string ulazni="bin/entropy.bin";
     auto data= FileManager::readFile(ulazni);
@@ -25,37 +14,28 @@ int main(){
 
     double H=calculate(ulazni);
     cout << "Entropija ulaznog fajla:" << H << "bita po bajtu" <<endl;
-    cout<<"C1"<<endl;
+
     unordered_map <unsigned char,int> freq;
     for(auto b:data)
     freq[b]++;
     vector<Simbol> simboli;
-    cout<<"C2"<<endl;
+
     for(auto& p:freq)
      simboli.push_back({p.first,(double)p.second/data.size()});
-    if(simboli.empty())
-        cout<<"C2.1"<<endl;
-    else{
-        cout<<"IMA NESTO"<<endl;
-    }
+
     sortSimboli(simboli);
     unordered_map<unsigned char,string> sfCodes;
     shaFanno(simboli,0,simboli.size()-1,sfCodes,"");
-    cout<<"C2.2"<<endl;
-    vector<pair<unsigned char,string>>codesVec;
-    for(auto& p:sfCodes){
-        codesVec.push_back(p);
-    }
-    cout<<"C3"<<endl;
+
+    vector<pair<unsigned char,string>>codesVec=getSimbols(sfCodes);
+  
     FileManager::writeCodes("codes/sha_fanno_codes.txt",codesVec);
 
     auto huffCodes=huffEncode(freq);
     codesVec.clear();
-    for(auto &p:huffCodes){
-        codesVec.push_back(p);
-    }
+    codesVec=getSimbols(huffCodes);
     FileManager::writeCodes("codes/huff_codes.txt",codesVec);
-    cout<<"C4"<<endl;
+
     string inputStr(data.begin(),data.end());
     auto lz77comp=lzComp(inputStr,8);
     auto lz77decomp=lzDecomp(lz77comp);

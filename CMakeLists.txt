@@ -30,6 +30,7 @@ add_executable(lzw_test
 
 add_executable(main
 	main.cpp
+	cpp/sub_fun.cpp
 	cpp/file_manager.cpp
 	cpp/entropy.cpp
 	cpp/sha_fanno.cpp

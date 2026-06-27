@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/cpp/lzw.cpp.o.d"
   "CMakeFiles/main.dir/cpp/sha_fanno.cpp.o"
   "CMakeFiles/main.dir/cpp/sha_fanno.cpp.o.d"
+  "CMakeFiles/main.dir/cpp/sub_fun.cpp.o"
+  "CMakeFiles/main.dir/cpp/sub_fun.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
   "main"
