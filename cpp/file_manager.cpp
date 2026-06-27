@@ -29,3 +29,8 @@ bool FileManager::compareFiles(const string& file1,const string& file2){
     auto f2=readFile(file2);
     return f1==f2;
 }
+
+void FileManager::writeReport(const string& text){
+        ofstream report("report.txt",ios::app);
+        report<<text<<"\n";
+}   

@@ -1,0 +1,4 @@
+Ulazni fajl: bin/entropy.bin (256 bajtova)
+
+Entropija ulaznog fajla:7.131473bita po bajtu
+

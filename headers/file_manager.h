@@ -14,6 +14,8 @@ class FileManager{
     static void writeText(const string& filename,const string& data);
     static void writeCodes(const string& filename,const vector<pair<unsigned char,string>>& codes);
     static bool compareFiles(const string &file1,const string& file2);
-
+    static void writeReport(const string& text);
 };
+
+
 #endif

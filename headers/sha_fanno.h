@@ -16,6 +16,7 @@ struct Simbol{
 };
 
 void shaFanno(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,string>&codes,string prefix);
-
+vector<unsigned char> sfComp(const vector<unsigned char>& data,const unordered_map<unsigned char,string>& codes);
+vector<unsigned char> sfDecomp(const vector<unsigned char>& compressed,const unordered_map<unsigned char,string>& codes); 
 #endif
 
