@@ -181,6 +181,19 @@ lzw_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/build
 .PHONY : lzw_test/fast
 
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
 cpp/entropy.o: cpp/entropy.cpp.o
 .PHONY : cpp/entropy.o
 
@@ -204,6 +217,30 @@ cpp/entropy.s: cpp/entropy.cpp.s
 cpp/entropy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/cpp/entropy.cpp.s
 .PHONY : cpp/entropy.cpp.s
+
+cpp/file_manager.o: cpp/file_manager.cpp.o
+.PHONY : cpp/file_manager.o
+
+# target to build an object file
+cpp/file_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/file_manager.cpp.o
+.PHONY : cpp/file_manager.cpp.o
+
+cpp/file_manager.i: cpp/file_manager.cpp.i
+.PHONY : cpp/file_manager.i
+
+# target to preprocess a source file
+cpp/file_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/file_manager.cpp.i
+.PHONY : cpp/file_manager.cpp.i
+
+cpp/file_manager.s: cpp/file_manager.cpp.s
+.PHONY : cpp/file_manager.s
+
+# target to generate assembly for a file
+cpp/file_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/file_manager.cpp.s
+.PHONY : cpp/file_manager.cpp.s
 
 cpp/huffman.o: cpp/huffman.cpp.o
 .PHONY : cpp/huffman.o
@@ -397,6 +434,30 @@ lzw_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/lzw_test.cpp.s
 .PHONY : lzw_test.cpp.s
 
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 sf_test.o: sf_test.cpp.o
 .PHONY : sf_test.o
 
@@ -433,10 +494,14 @@ help:
 	@echo "... huffman_test"
 	@echo "... lz77_test"
 	@echo "... lzw_test"
+	@echo "... main"
 	@echo "... sf_test"
 	@echo "... cpp/entropy.o"
 	@echo "... cpp/entropy.i"
 	@echo "... cpp/entropy.s"
+	@echo "... cpp/file_manager.o"
+	@echo "... cpp/file_manager.i"
+	@echo "... cpp/file_manager.s"
 	@echo "... cpp/huffman.o"
 	@echo "... cpp/huffman.i"
 	@echo "... cpp/huffman.s"
@@ -461,6 +526,9 @@ help:
 	@echo "... lzw_test.o"
 	@echo "... lzw_test.i"
 	@echo "... lzw_test.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... sf_test.o"
 	@echo "... sf_test.i"
 	@echo "... sf_test.s"
