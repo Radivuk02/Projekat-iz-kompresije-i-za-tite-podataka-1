@@ -12,7 +12,7 @@ int main(){
         {'E', 16},
         {'F', 45}
     };
-    auto codes=encode(freq);
+    auto codes=huffEncode(freq);
 
     cout << "Huffman kodovi:"<<endl;
     for(auto&p :codes){

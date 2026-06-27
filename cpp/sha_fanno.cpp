@@ -1,10 +1,13 @@
 #include "../headers/sha_fanno.h"
 
-void shaFanno(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,string>&codes,string prefix){
+void shaFanno(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,string>&codes,string prefix){    
+    if(l>r)
+        return;
     if(l==r){
         codes[simboli[l].ch]=prefix;
         return;
     }
+
     double ukupno=0;
     for(int i=l;i<=r;i++)
     ukupno+=simboli[i].prob;

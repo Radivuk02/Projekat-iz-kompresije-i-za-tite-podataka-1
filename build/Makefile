@@ -200,6 +200,7 @@ cpp/entropy.o: cpp/entropy.cpp.o
 # target to build an object file
 cpp/entropy.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/cpp/entropy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/entropy.cpp.o
 .PHONY : cpp/entropy.cpp.o
 
 cpp/entropy.i: cpp/entropy.cpp.i
@@ -208,6 +209,7 @@ cpp/entropy.i: cpp/entropy.cpp.i
 # target to preprocess a source file
 cpp/entropy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/cpp/entropy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/entropy.cpp.i
 .PHONY : cpp/entropy.cpp.i
 
 cpp/entropy.s: cpp/entropy.cpp.s
@@ -216,6 +218,7 @@ cpp/entropy.s: cpp/entropy.cpp.s
 # target to generate assembly for a file
 cpp/entropy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/entropy_test.dir/build.make CMakeFiles/entropy_test.dir/cpp/entropy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/entropy.cpp.s
 .PHONY : cpp/entropy.cpp.s
 
 cpp/file_manager.o: cpp/file_manager.cpp.o
@@ -248,6 +251,7 @@ cpp/huffman.o: cpp/huffman.cpp.o
 # target to build an object file
 cpp/huffman.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/huffman.cpp.o
 .PHONY : cpp/huffman.cpp.o
 
 cpp/huffman.i: cpp/huffman.cpp.i
@@ -256,6 +260,7 @@ cpp/huffman.i: cpp/huffman.cpp.i
 # target to preprocess a source file
 cpp/huffman.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/huffman.cpp.i
 .PHONY : cpp/huffman.cpp.i
 
 cpp/huffman.s: cpp/huffman.cpp.s
@@ -264,6 +269,7 @@ cpp/huffman.s: cpp/huffman.cpp.s
 # target to generate assembly for a file
 cpp/huffman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman_test.dir/build.make CMakeFiles/huffman_test.dir/cpp/huffman.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/huffman.cpp.s
 .PHONY : cpp/huffman.cpp.s
 
 cpp/lz77.o: cpp/lz77.cpp.o
@@ -272,6 +278,7 @@ cpp/lz77.o: cpp/lz77.cpp.o
 # target to build an object file
 cpp/lz77.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lz77.cpp.o
 .PHONY : cpp/lz77.cpp.o
 
 cpp/lz77.i: cpp/lz77.cpp.i
@@ -280,6 +287,7 @@ cpp/lz77.i: cpp/lz77.cpp.i
 # target to preprocess a source file
 cpp/lz77.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lz77.cpp.i
 .PHONY : cpp/lz77.cpp.i
 
 cpp/lz77.s: cpp/lz77.cpp.s
@@ -288,6 +296,7 @@ cpp/lz77.s: cpp/lz77.cpp.s
 # target to generate assembly for a file
 cpp/lz77.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lz77_test.dir/build.make CMakeFiles/lz77_test.dir/cpp/lz77.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lz77.cpp.s
 .PHONY : cpp/lz77.cpp.s
 
 cpp/lzw.o: cpp/lzw.cpp.o
@@ -296,6 +305,7 @@ cpp/lzw.o: cpp/lzw.cpp.o
 # target to build an object file
 cpp/lzw.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lzw.cpp.o
 .PHONY : cpp/lzw.cpp.o
 
 cpp/lzw.i: cpp/lzw.cpp.i
@@ -304,6 +314,7 @@ cpp/lzw.i: cpp/lzw.cpp.i
 # target to preprocess a source file
 cpp/lzw.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lzw.cpp.i
 .PHONY : cpp/lzw.cpp.i
 
 cpp/lzw.s: cpp/lzw.cpp.s
@@ -312,6 +323,7 @@ cpp/lzw.s: cpp/lzw.cpp.s
 # target to generate assembly for a file
 cpp/lzw.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lzw_test.dir/build.make CMakeFiles/lzw_test.dir/cpp/lzw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/lzw.cpp.s
 .PHONY : cpp/lzw.cpp.s
 
 cpp/sha_fanno.o: cpp/sha_fanno.cpp.o
@@ -320,6 +332,7 @@ cpp/sha_fanno.o: cpp/sha_fanno.cpp.o
 # target to build an object file
 cpp/sha_fanno.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sha_fanno.cpp.o
 .PHONY : cpp/sha_fanno.cpp.o
 
 cpp/sha_fanno.i: cpp/sha_fanno.cpp.i
@@ -328,6 +341,7 @@ cpp/sha_fanno.i: cpp/sha_fanno.cpp.i
 # target to preprocess a source file
 cpp/sha_fanno.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sha_fanno.cpp.i
 .PHONY : cpp/sha_fanno.cpp.i
 
 cpp/sha_fanno.s: cpp/sha_fanno.cpp.s
@@ -336,6 +350,7 @@ cpp/sha_fanno.s: cpp/sha_fanno.cpp.s
 # target to generate assembly for a file
 cpp/sha_fanno.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sf_test.dir/build.make CMakeFiles/sf_test.dir/cpp/sha_fanno.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cpp/sha_fanno.cpp.s
 .PHONY : cpp/sha_fanno.cpp.s
 
 entropy_test.o: entropy_test.cpp.o

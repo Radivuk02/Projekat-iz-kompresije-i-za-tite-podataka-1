@@ -27,3 +27,12 @@ add_executable(lz77_test
 add_executable(lzw_test
 	lzw_test.cpp
 	cpp/lzw.cpp)
+
+add_executable(main
+	main.cpp
+	cpp/file_manager.cpp
+	cpp/entropy.cpp
+	cpp/sha_fanno.cpp
+	cpp/huffman.cpp
+	cpp/lz77.cpp
+	cpp/lzw.cpp)

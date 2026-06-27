@@ -100,19 +100,99 @@ CMakeFiles/main.dir/cpp/file_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/file_manager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/file_manager.cpp -o CMakeFiles/main.dir/cpp/file_manager.cpp.s
 
+CMakeFiles/main.dir/cpp/entropy.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cpp/entropy.cpp.o: /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/entropy.cpp
+CMakeFiles/main.dir/cpp/entropy.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/cpp/entropy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cpp/entropy.cpp.o -MF CMakeFiles/main.dir/cpp/entropy.cpp.o.d -o CMakeFiles/main.dir/cpp/entropy.cpp.o -c /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/entropy.cpp
+
+CMakeFiles/main.dir/cpp/entropy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cpp/entropy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/entropy.cpp > CMakeFiles/main.dir/cpp/entropy.cpp.i
+
+CMakeFiles/main.dir/cpp/entropy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/entropy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/entropy.cpp -o CMakeFiles/main.dir/cpp/entropy.cpp.s
+
+CMakeFiles/main.dir/cpp/sha_fanno.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cpp/sha_fanno.cpp.o: /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sha_fanno.cpp
+CMakeFiles/main.dir/cpp/sha_fanno.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/cpp/sha_fanno.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cpp/sha_fanno.cpp.o -MF CMakeFiles/main.dir/cpp/sha_fanno.cpp.o.d -o CMakeFiles/main.dir/cpp/sha_fanno.cpp.o -c /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sha_fanno.cpp
+
+CMakeFiles/main.dir/cpp/sha_fanno.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cpp/sha_fanno.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sha_fanno.cpp > CMakeFiles/main.dir/cpp/sha_fanno.cpp.i
+
+CMakeFiles/main.dir/cpp/sha_fanno.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/sha_fanno.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/sha_fanno.cpp -o CMakeFiles/main.dir/cpp/sha_fanno.cpp.s
+
+CMakeFiles/main.dir/cpp/huffman.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cpp/huffman.cpp.o: /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/huffman.cpp
+CMakeFiles/main.dir/cpp/huffman.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/cpp/huffman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cpp/huffman.cpp.o -MF CMakeFiles/main.dir/cpp/huffman.cpp.o.d -o CMakeFiles/main.dir/cpp/huffman.cpp.o -c /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/huffman.cpp
+
+CMakeFiles/main.dir/cpp/huffman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cpp/huffman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/huffman.cpp > CMakeFiles/main.dir/cpp/huffman.cpp.i
+
+CMakeFiles/main.dir/cpp/huffman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/huffman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/huffman.cpp -o CMakeFiles/main.dir/cpp/huffman.cpp.s
+
+CMakeFiles/main.dir/cpp/lz77.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cpp/lz77.cpp.o: /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lz77.cpp
+CMakeFiles/main.dir/cpp/lz77.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/cpp/lz77.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cpp/lz77.cpp.o -MF CMakeFiles/main.dir/cpp/lz77.cpp.o.d -o CMakeFiles/main.dir/cpp/lz77.cpp.o -c /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lz77.cpp
+
+CMakeFiles/main.dir/cpp/lz77.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cpp/lz77.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lz77.cpp > CMakeFiles/main.dir/cpp/lz77.cpp.i
+
+CMakeFiles/main.dir/cpp/lz77.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/lz77.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lz77.cpp -o CMakeFiles/main.dir/cpp/lz77.cpp.s
+
+CMakeFiles/main.dir/cpp/lzw.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/cpp/lzw.cpp.o: /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lzw.cpp
+CMakeFiles/main.dir/cpp/lzw.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/cpp/lzw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/cpp/lzw.cpp.o -MF CMakeFiles/main.dir/cpp/lzw.cpp.o.d -o CMakeFiles/main.dir/cpp/lzw.cpp.o -c /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lzw.cpp
+
+CMakeFiles/main.dir/cpp/lzw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/cpp/lzw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lzw.cpp > CMakeFiles/main.dir/cpp/lzw.cpp.i
+
+CMakeFiles/main.dir/cpp/lzw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/cpp/lzw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/cpp/lzw.cpp -o CMakeFiles/main.dir/cpp/lzw.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
-"CMakeFiles/main.dir/cpp/file_manager.cpp.o"
+"CMakeFiles/main.dir/cpp/file_manager.cpp.o" \
+"CMakeFiles/main.dir/cpp/entropy.cpp.o" \
+"CMakeFiles/main.dir/cpp/sha_fanno.cpp.o" \
+"CMakeFiles/main.dir/cpp/huffman.cpp.o" \
+"CMakeFiles/main.dir/cpp/lz77.cpp.o" \
+"CMakeFiles/main.dir/cpp/lzw.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/cpp/file_manager.cpp.o
+main: CMakeFiles/main.dir/cpp/entropy.cpp.o
+main: CMakeFiles/main.dir/cpp/sha_fanno.cpp.o
+main: CMakeFiles/main.dir/cpp/huffman.cpp.o
+main: CMakeFiles/main.dir/cpp/lz77.cpp.o
+main: CMakeFiles/main.dir/cpp/lzw.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
