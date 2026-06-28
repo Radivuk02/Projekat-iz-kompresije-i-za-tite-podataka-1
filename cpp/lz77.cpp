@@ -42,3 +42,18 @@ string lzDecomp(const vector<Token>&tokeni){
     }
     return izlaz;
 }
+
+vector<unsigned char> lz77serial(const vector<Token>& tokens) {
+    vector<unsigned char> bytes;
+    for (auto& t : tokens) {
+
+        bytes.push_back((t.offset >> 8) & 0xFF);
+        bytes.push_back(t.offset & 0xFF);
+
+        bytes.push_back((t.len >> 8) & 0xFF);
+        bytes.push_back(t.len & 0xFF);
+
+        bytes.push_back((unsigned char)t.next);
+    }
+    return bytes;
+}

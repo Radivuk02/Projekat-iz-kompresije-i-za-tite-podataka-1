@@ -1,8 +1,8 @@
-Ulazni fajl: bin/entropy.bin (256 bajtova)
+Ulazni fajl: bin/test.bin (2097152 bajtova)
 
-Entropija ulaznog fajla: 7.131473 bita po bajtu
+Entropija ulaznog fajla: 7.999915 bita po bajtu
 
-LZ77 uspešan
+LZ77 neuspešan
 
 LZW uspešan
 

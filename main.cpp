@@ -13,7 +13,7 @@ int main() {
     ofstream clearReport("report.txt", ios::trunc);
     clearReport.close();
 
-    string ulazni = "bin/entropy.bin";
+    string ulazni = "bin/test.bin";
     auto data = FileManager::readFile(ulazni);
 
     string poruka = "Ulazni fajl: " + ulazni + " (" + to_string(data.size()) + " bajtova)\n";
@@ -67,6 +67,8 @@ int main() {
 
     string inputStr(data.begin(), data.end());
     auto lz77comp = lzComp(inputStr, 8);
+    auto lz77Bytes=lz77serial(lz77comp);
+    FileManager::writeBin("compress/lz77.bin",lz77Bytes);
     auto lz77decomp = lzDecomp(lz77comp);
     FileManager::writeText("decompress/lz77.bin", lz77decomp);
     if(lz77decomp == inputStr) {
