@@ -31,44 +31,46 @@ unordered_map<unsigned char,string> huffEncode(const unordered_map<unsigned char
     return codes;
 }
 
-vector<unsigned char> huffCompress(const vector<unsigned char>&data,unordered_map<unsigned char,string>&codes)
+vector<unsigned char> huffCompress(const vector<unsigned char>& data, unordered_map<unsigned char,string>& codes,size_t &bitCount) 
 {
-   unordered_map<unsigned char,int> freq;
+    unordered_map<unsigned char,int> freq;
+    for(auto b:data) freq[b]++;
 
-   for(auto b:data)
-   freq[b]++;
+    codes = huffEncode(freq);
 
-   codes=huffEncode(freq);
-
-   string bits;
-
-   for(auto b: data){
-    bits+=codes[b];
-   }
-
-   vector <unsigned char> compressed;
-   for(size_t i=0;i<bits.size();i+=8){
-    unsigned char byte=0;
-    for(int j=0;j<8 && i+j<bits.size();j++){
-        if(bits[i+1]=='1'){
-            byte |=(1<<(7-j));
-        }
+    string bits;
+    for(auto b: data){
+        bits += codes[b];
     }
-    compressed.push_back(byte);
-   }
-   return (compressed);
+
+    bitCount = bits.size();
+
+    vector<unsigned char> compressed;
+    for(size_t i=0; i<bits.size(); i+=8){
+        unsigned char byte = 0;
+        for(int j=0; j<8 && i+j<bits.size(); j++){
+            if(bits[i+j] == '1'){
+                byte |= (1 << (7-j));
+            }
+        }
+        compressed.push_back(byte);
+    }
+
+    return compressed;
 }
 
-vector <unsigned char> huffmanDecomp(const vector<unsigned char>&compressed,const unordered_map<unsigned char,string>&codes){
+vector <unsigned char> huffmanDecomp(const vector<unsigned char>&compressed,const unordered_map<unsigned char,string>&codes,size_t bitCount){
     unordered_map<string,unsigned char> unazad;
     for(auto &c:codes){
         unazad[c.second]=c.first;
     }
 
     string bits;
+    size_t processBits=0;
     for(auto byte:compressed){
-        for(int j=0;j<8;j++){
-            bits+=((byte & (1<<(7-j))) ? '1':'0');
+        for(int j=7;j>=0 && processBits<bitCount;j--){
+            bits += ((byte >> j) & 1) ? '1' : '0';
+            processBits++;
         }
     }
     vector<unsigned char> decompressed;

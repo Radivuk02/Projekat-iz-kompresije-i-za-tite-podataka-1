@@ -9,4 +9,8 @@ using namespace std;
 void sortSimboli(vector<Simbol>& simboli);
 
 vector<pair<unsigned char,string>>getSimbols( unordered_map<unsigned char,string> codes);
+
+vector<unsigned char> sfDecomp(const vector<unsigned char>& compressed,const unordered_map<unsigned char,string>& codes);
+
+
 #endif

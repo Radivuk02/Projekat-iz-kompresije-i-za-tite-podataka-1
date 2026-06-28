@@ -28,6 +28,6 @@ struct Compare{
 void buildCodes(Node* root,string str,unordered_map<unsigned char,string>&codes);
 unordered_map<unsigned char,string> huffEncode(const unordered_map<unsigned char,int>& freg);
 
-vector<unsigned char> huffCompress(const vector<unsigned char>&data,unordered_map<unsigned char,string>&codes);
-vector <unsigned char> huffmanDecomp(const vector<unsigned char>&compressed,const unordered_map<unsigned char,string>&codes);
+vector<unsigned char> huffCompress(const vector<unsigned char>&data,unordered_map<unsigned char,string>&codes,size_t& bitCount);
+vector <unsigned char> huffmanDecomp(const vector<unsigned char>&compressed,const unordered_map<unsigned char,string>&codes,size_t bitCount);
 #endif
