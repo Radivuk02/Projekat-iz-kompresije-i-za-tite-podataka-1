@@ -1,0 +1,8 @@
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/entropy_test.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/huffman_test.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/sf_test.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/lz77_test.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/lzw_test.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/main.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/edit_cache.dir
+/home/baron/Desktop/Kompresija/Projekat1/Projekat-iz-kompresije-i-za-tite-podataka-1/build/CMakeFiles/rebuild_cache.dir

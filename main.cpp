@@ -78,6 +78,8 @@ int main() {
     }
 
     auto wComp = lzwComp(inputStr);
+    vector<unsigned char>wcompBytes(wComp.begin(),wComp.end());
+    FileManager::writeBin("compress/lzw.bin", wcompBytes);
     string wDecomp = lzwDecomp(wComp);
     FileManager::writeText("decompress/lzw.bin", wDecomp);
     if(wDecomp == inputStr) {
