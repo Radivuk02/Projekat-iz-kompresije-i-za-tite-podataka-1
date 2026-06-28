@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/entropy_test.dir/entropy_test.cpp.o CMakeFiles/entropy_test.dir/cpp/entropy.cpp.o -o entropy_test
