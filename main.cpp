@@ -38,11 +38,21 @@ int main() {
 
     vector<pair<unsigned char,string>> codesVec = getSimbols(sfCodes);
     FileManager::writeCodes("codes/sha_fanno_codes.txt", codesVec);
-
-    auto sfC = sfComp(data, sfCodes);
+    size_t validBits;
+    auto sfC = sfComp(data, sfCodes,validBits);
     FileManager::writeBin("compress/sf.bin", sfC);
-    auto sfDC = sfDecomp(sfC, sfCodes);
+    FileManager::writeMeta("meta/sf.txt",validBits);
+    validBits=FileManager::readMeta("meta/sf.txt");
+    auto sfDC = sfDecomp(sfC, sfCodes,validBits);
     FileManager::writeBin("decompress/sf.bin", sfDC);
+
+    if (FileManager::compareFiles(ulazni, "decompress/sf.bin")) {
+        cout << "Shannon–Fano uspešan" << endl;
+        FileManager::writeReport("Shannon–Fano uspešan\n");
+    } else {
+        cout << "Shannon–Fano neuspešan" << endl;
+        FileManager::writeReport("Shannon–Fano neuspešan\n");
+    }
 
     auto huffCodes = huffEncode(freq);
     codesVec.clear();
