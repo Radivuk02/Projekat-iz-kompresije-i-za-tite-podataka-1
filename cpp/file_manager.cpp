@@ -34,3 +34,15 @@ void FileManager::writeReport(const string& text){
         ofstream report("report.txt",ios::app);
         report<<text<<"\n";
 }   
+
+void FileManager::writeMeta(const string& filename, size_t x){
+    ofstream file(filename);
+    file<<x;
+}
+
+size_t FileManager::readMeta(const string& filename){
+    ifstream file(filename);
+    size_t x;
+    file>>x;
+    return x;
+}

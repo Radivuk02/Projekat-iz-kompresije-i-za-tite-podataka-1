@@ -15,6 +15,8 @@ class FileManager{
     static void writeCodes(const string& filename,const vector<pair<unsigned char,string>>& codes);
     static bool compareFiles(const string &file1,const string& file2);
     static void writeReport(const string& text);
+    static void writeMeta(const string& filename,size_t x);
+    static size_t readMeta(const string& filename);
 };
 
 
