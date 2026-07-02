@@ -13,7 +13,7 @@ int main() {
     ofstream clearReport("report.txt", ios::trunc);
     clearReport.close();
 
-    string ulazni = "bin/test.bin";
+    string ulazni = "bin/ulaz.bin";
     auto data = FileManager::readFile(ulazni);
 
     string poruka = "Ulazni fajl: " + ulazni + " (" + to_string(data.size()) + " bajtova)\n";
@@ -63,11 +63,11 @@ int main() {
     auto huffComp = huffCompress(data, huffCodes, bitCount);
     FileManager::writeBin("compress/huff.bin", huffComp);
 
-    ofstream meta("compress/huff_meta.txt");
+    ofstream meta("meta/huff.txt");
     meta << bitCount;
     meta.close();
 
-    ifstream metaIn("compress/huff_meta.txt");
+    ifstream metaIn("meta/huff.txt");
     size_t bitCountRead;
     metaIn >> bitCountRead;
     metaIn.close();
@@ -76,15 +76,19 @@ int main() {
     FileManager::writeBin("decompress/huff.bin", huffDecomp);
 
     string inputStr(data.begin(), data.end());
-    auto lz77comp = lzComp(inputStr, 8);
-    auto lz77Bytes=lz77serial(lz77comp);
-    FileManager::writeBin("compress/lz77.bin",lz77Bytes);
-    auto lz77decomp = lzDecomp(lz77comp);
-    FileManager::writeText("decompress/lz77.bin", lz77decomp);
-    if(lz77decomp == inputStr) {
+    auto lz77comp = lzComp(inputStr, 1024);
+    auto lz77Bytes = lz77serial(lz77comp);
+    FileManager::writeBin("compress/lz77.bin", lz77Bytes);
+    auto lz77R = FileManager::readFile("compress/lz77.bin");
+    auto tokens = lz77deserial(lz77R);
+    auto lz77decomp = lzDecomp(tokens);
+    FileManager::writeBin("decompress/lz77.bin",vector<unsigned char>(lz77decomp.begin(), lz77decomp.end()));
+
+    if (lz77decomp == inputStr) {
         cout << "LZ77 uspešan" << endl;
         FileManager::writeReport("LZ77 uspešan\n");
-    } else {
+    } 
+    else {
         cout << "LZ77 neuspešan" << endl;
         FileManager::writeReport("LZ77 neuspešan\n");
     }

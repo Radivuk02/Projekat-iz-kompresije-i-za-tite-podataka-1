@@ -18,4 +18,5 @@ vector<Token> lzComp(const string& input, int windowSize);
 string lzDecomp(const vector<Token>&tokeni);
 
 vector<unsigned char> lz77serial(const vector<Token>& tokens);
+vector<Token>lz77deserial(const vector<unsigned char>& data);
 #endif

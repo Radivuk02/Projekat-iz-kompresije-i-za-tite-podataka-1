@@ -1,6 +1,6 @@
-Ulazni fajl: bin/test.bin (2097152 bajtova)
+Ulazni fajl: bin/ulaz.bin (1143900 bajtova)
 
-Entropija ulaznog fajla: 7.999915 bita po bajtu
+Entropija ulaznog fajla: 3.275750 bita po bajtu
 
 Shannon–Fano uspešan
 
