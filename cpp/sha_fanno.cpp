@@ -25,7 +25,7 @@ void shaFanno(vector<Simbol>&simboli,int l,int r,unordered_map<unsigned char,str
     shaFanno(simboli,mid+1,r,codes,prefix+"1");
 }
 
-vector<unsigned char> sfComp(const vector<unsigned char>& data,const unordered_map<unsigned char,string>& codes) {
+vector<unsigned char> sfComp(const vector<unsigned char>& data,const unordered_map<unsigned char,string>& codes,size_t &validBits) {
     string bits;
     for (auto b : data) {
         bits += codes.at(b); 
@@ -40,18 +40,26 @@ vector<unsigned char> sfComp(const vector<unsigned char>& data,const unordered_m
         }
         comp.push_back(byte);
     }
+    if(bits.size()%8==0){
+        validBits=8;
+    }
+    else{
+        validBits=bits.size()%8;
+    }
     return comp;
 }
 
-vector<unsigned char> sfDecomp(const vector<unsigned char>& compressed,const unordered_map<unsigned char,string>& codes) {
+vector<unsigned char> sfDecomp(const vector<unsigned char>& compressed,const unordered_map<unsigned char,string>& codes,size_t validBits) {
     unordered_map<string,unsigned char> unazad;
     for (auto& p : codes) {
         unazad[p.second] = p.first;
     }
 
     string bitString;
-    for (auto byte : compressed) {
-        for (int j = 7; j >= 0; j--) {
+    for (size_t i = 0; i < compressed.size(); i++) {
+        unsigned char byte = compressed[i];
+        int limit = (i == compressed.size()-1) ? validBits : 8;
+        for (int j = 7; j >= 8-limit; j--) {
             bitString += ((byte >> j) & 1) ? '1' : '0';
         }
     }
