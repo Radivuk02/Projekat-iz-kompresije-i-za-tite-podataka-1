@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/lz77_test.dir/lz77_test.cpp.o CMakeFiles/lz77_test.dir/cpp/lz77.cpp.o -o lz77_test 

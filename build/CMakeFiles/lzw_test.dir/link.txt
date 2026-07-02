@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/lzw_test.dir/lzw_test.cpp.o CMakeFiles/lzw_test.dir/cpp/lzw.cpp.o -o lzw_test 
